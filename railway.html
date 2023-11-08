@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>railway</title>
+    <style>
+        
+        .center-image img {
+            display: block;
+            margin: 0 auto;
+        }
+        .left-clock{
+            text-align: right;
+            font-weight: bold;
+            font-size: 35px;
+        } 
+    
+            G1{text-align: center;}
+            .left-text{
+                text-align: left;
+               } 
+            .center-text{
+                text-align: center;
+            }
+        </style> 
+    <div id="digital-clock" class="left-clock"></div>
+</head>
+<body>
+    <div class="center-image">
+        <img  src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Indian_Railways.svg/180px-Indian_Railways.svg.png"> 
+        <pre><center><H2>SOUTH CENTRAL RAILWAYS</H2></center></pre>
+    <PRE><center><H3>SECUNDRABAD DIVISON</H3></PRE><HR></center>
+        <h1><center>TRAIN ARRIVAL INFO BOARD</center></h1>
+        <div>
+<body>
+    <center><table border="1" border-collapse:collapse;></center>
+        <tr>
+            <th>Train No </th>
+            <th>Train Name</th>
+            <th>Arrival Time</th>
+            <td><b>Platform No</b></td>
+        </tr>
+        <tr>
+            <td>12728</td>
+            <td><marquee direction="left">Godavari Express; Hyderabad-Visakapatnam</marquee></td>
+            <td>15:05</td>
+            <td><blink>1</blink></td>
+        </tr>
+        <tr>
+            <td>20806</td>
+            <td> <marquee direction="left">Vande Bharat Express;Hyderabad-Visakapatnam</marquee></td>
+            <td>15:20</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>17603</td>
+            <td><marquee direction="left">Chengalpattu Express; kachiguda-Chengalpattu</marquee></td>
+            <td>16:45</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>12252</td>
+            <td><marquee direction="left">Weinganga SF Express;Corba- Yeshwanthpur</marquee> </td>
+            <td>17:05</td>
+            <td>1</td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+    function updateClock() {
+        const digitalClock = document.getElementById("digital-clock");
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        digitalClock.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+
+    // Initial call to set the clock without delay
+    updateClock();
+</script>
+</head>
+<body>
+    <h2>Trains Passing From Secunderabad station</h2>
+    <div class="left-text">
+       <u>Towards Vishakapatnam</u>
+        <ol type="1">
+            <li><b>Vishaka Express(12728):</b></li>
+            
+            <ul> Running fromhyderabad to Vishakapatnam Every day</ul>
+            <ul>Timings : 16:50 - 07:10</ul>
+            <li><b>Godavari Express(12728) :</b></li>
+            <ul>Runinng every day</ul>
+            <ul>Timings : 17:05 - 05:45</ul>
+            <li><b>Vande Barath(20834) :</b></li>
+            <ul>Running Every day</ul>
+            <ul>Timings : 15:00 - 21:31</ul>
+        </div>
+    <div class="left-text">
+    <u>Towards Benglore</u>
+    <ol>
+        <li><b>Garibrath(12735):</b></li>
+        <ul>Running on wednesday and sundays</ul>
+        <ul>Timings : 20:30 - 08:10</ul>
+        <li><b>Wainganga(12252):</b></li>
+        <ul>Running Every day</ul>
+        <ul>Timings : 01:20 - 02:30</ul>
+        <li><b>Kachiguda Rishikesh Express:(17603)</b></li>
+        <ul>Running Every day</ul>
+        <ul>Timings : 21:05 - 20:35</ul>
+    </ol>
+            
+            
+        
+    </div>
+    <div class="ceter-text">
+        <a href="https://www.irctc.co.in/nget/train-search">click here to book tickets</a>
+    </div>
+<hr> 
+    <img src="https://www.irctc.co.in/nget/assets/images/logo.png">
+    For any Querries and Complaints Contact<br>
+    Mail to us     <a href="mail to:care@irctc.co.in">mail ID</a>   
+    <br>CAll US ON <a href=""tel:+91 999999999>+91 999999999</a><br>
+</body>         
+
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KqJikDzb3l4?si=phV2j_ncEUAqCgfx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<!-- <video height="300" width="300" controls autoplay muted>
+    <source src="../HTML/vvvd.mp4"/>
+</video> -->
+<!-- <img src=video height="300" width="300" controls autoplay muted> -->
+<!-- <source src="../HTML/vvvd.mp4"/>
+</video><br>
+<div class="left-text">
+    <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label fro="password">Enter Password</label>
+  <input type="text" id="password" name>
+</div> -->
+</body>
+</html>
